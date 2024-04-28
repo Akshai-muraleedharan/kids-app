@@ -21,7 +21,7 @@ btnEl.addEventListener('click', () => {
   if (userVal === "") {
     console.log('please enter another val');
     fastload()
-    warnigs.innerText = "Please enter a value not empty"
+    warnigs.innerText = "Please enter a character not empty"
 
   } else if (userVal.length < 2) {
     contEl.innerText = userVal.toUpperCase()
@@ -229,4 +229,4 @@ function fastload() {
 
 
 
-//      ownproject Akshai Muraleedharan
+//      own project Akshai Muraleedharan
