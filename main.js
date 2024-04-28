@@ -219,5 +219,5 @@ function pagereload() {
 function fastload() {
   setTimeout(() =>{
     location.reload()
-  },3000)
+  },2000)
 }

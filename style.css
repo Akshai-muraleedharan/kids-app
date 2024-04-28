@@ -5,31 +5,32 @@
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
-  }
-*{
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     background-color: #96b3b3;
     width: 100%;
     height: 100dvh;
     display: flex;
     justify-content: center;
-    
+
 }
 
-.wrapper{
+.wrapper {
     width: 950px;
     /* background-color: lightblue; */
     height: 80%;
     margin-top: 50px;
-    
+
 }
 
-.content{
+.content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 70%;
@@ -37,7 +38,7 @@
     padding: 20px;
 }
 
-.first--content{
+.first--content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,26 +48,31 @@
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 2px 2px 5px -3px black;
-    
 
-   
+
+
 }
 
-.animation-first{
+.animation-first {
     animation-name: example;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-  }
+}
 
 
 
 @keyframes example {
-    from {transform: translatey(-60px)}
-    to {transform: translatey(5px)}
-  }
+    from {
+        transform: translatey(-60px)
+    }
+
+    to {
+        transform: translatey(5px)
+    }
+}
 
 
-.second--content{
+.second--content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,7 +85,7 @@
     padding: 10px;
 }
 
-.input--container{
+.input--container {
     height: 30%;
     padding: 20px;
     display: flex;
@@ -88,8 +94,8 @@
     position: relative;
 }
 
-.input--container input{
-    padding:5px 0px 5px 10px;
+.input--container input {
+    padding: 5px 0px 5px 10px;
     height: 50px;
     font-size: 24px;
     font-family: "Poppins", sans-serif;
@@ -99,7 +105,7 @@
     border: none;
 }
 
-.input--container button{
+.input--container button {
     padding: 8px;
     margin-top: 15px;
     border-radius: 4px;
@@ -112,8 +118,8 @@
     font-size: 17px;
 }
 
-.warnings{
-    
+.warnings {
+
     font-size: 19px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -121,4 +127,85 @@
     right: 30px;
     top: 32px;
     color: #ff1414;
+}
+
+@media screen and (min-width: 320px) and (max-width:767px) {
+    .container {
+        padding: 20px;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .first--content {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        font-size: 45px;
+    }
+
+    .second--content {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        font-size: 30px;
+    }
+
+    .input--container {
+        padding: 0px;
+        margin-top: 50px;
+    }
+
+    .input--container button {
+        margin-top: 30px;
+    }
+
+    .input--container input {
+        width: 100%;
+        height: 40px;
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+    }
+
+    .warnings {
+        font-size: 10px;
+        right: 0px;
+        top: 37px;
+        background-color: #fff;
+        padding: 3px;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+
+    .animation-first {
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+
+
+
+    @keyframes example {
+        from {
+            transform: translatey(-40px)
+        }
+
+        to {
+            transform: translatey(0px)
+        }
+    }
+
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width:900px){
+    .first--content{
+        font-size: 80px;
+    }
+
+    .second--content{
+        font-size: 60px;
+    }
 }
