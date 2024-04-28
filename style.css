@@ -129,7 +129,10 @@
     color: #ff1414;
 }
 
-@media screen and (min-width: 320px) and (max-width:767px) {
+
+
+
+@media screen and (min-width: 320px) and (max-width:760px) {
     .container {
         padding: 20px;
     }
@@ -200,7 +203,7 @@
 }
 
 
-@media screen and (min-width: 768px) and (max-width:900px){
+@media screen and(min-width: 768px) and(max-width:900px){
     .first--content{
         font-size: 80px;
     }
@@ -208,4 +211,4 @@
     .second--content{
         font-size: 60px;
     }
-}
+} 

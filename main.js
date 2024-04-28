@@ -1,12 +1,16 @@
-let inputEl = document.getElementById('input-el');
-let btnEl = document.getElementById('btn');
-let contEl = document.getElementById('cont-el');
-let containerEl = document.getElementById('container-el');
-let span = document.getElementById('span');
-let warnigs =document.getElementById('warns')
-// global inzlisation
-let userVal;
-let voice;
+  let inputEl = document.getElementById('input-el');
+  let btnEl = document.getElementById('btn');
+  let contEl = document.getElementById('cont-el');
+  let containerEl = document.getElementById('container-el');
+  let span = document.getElementById('span');
+  let warnigs = document.getElementById('warns')
+  // global inzlisation
+  let userVal;
+  let voice;
+
+
+//  button function 
+
 btnEl.addEventListener('click', () => {
 
 
@@ -16,16 +20,16 @@ btnEl.addEventListener('click', () => {
 
   if (userVal === "") {
     console.log('please enter another val');
-    fastload() 
-       warnigs.innerText = "Please enter a value not empty"
+    fastload()
+    warnigs.innerText = "Please enter a value not empty"
 
-  } else if(userVal.length < 2) {
+  } else if (userVal.length < 2) {
     contEl.innerText = userVal.toUpperCase()
     condition()
     pagereload()
-  }else{
+  } else {
     console.log("enter val");
-    warnigs.innerText ="Maximum one character"
+    warnigs.innerText = "Maximum one character"
     fastload()
   }
 
@@ -35,6 +39,7 @@ btnEl.addEventListener('click', () => {
 }, { once: true })
 
 
+// condition for addeventListner()
 
 function condition() {
 
@@ -63,149 +68,149 @@ function condition() {
     voice = new Audio("mp3/AudioCutter_ABC Phonics Chant for Children  _  Sounds and Actions from A to Z(3)(C).mp3")
     voice.play();
 
-  } else if(userVal === "d" || userVal === "D"){
+  } else if (userVal === "d" || userVal === "D") {
     containerEl.innerText = ` Dog `
     span.innerText = "🐕"
     span.className = "animation-first"
 
     voice = new Audio("mp3/AudioCutter_ABC Phonics Chant for Children  _  Sounds and Actions from A to Z(2)(D).mp3")
     voice.play();
-  }else if(userVal === "e" || userVal === "E"){
+  } else if (userVal === "e" || userVal === "E") {
     containerEl.innerText = ` Elephant `
     span.innerText = "🐘"
     span.className = "animation-first"
 
     voice = new Audio("mp3/AudioCutter_ABC Phonics Chant for Children  _  Sounds and Actions from A to Z(3)(E).mp3")
     voice.play();
-  }else if( userVal === "f" || userVal === "F"){
+  } else if (userVal === "f" || userVal === "F") {
     containerEl.innerText = ` Fish `
     span.innerText = "🐠"
     span.className = "animation-first"
     voice = new Audio("mp3/AudioCutter_ABC Phonics Chant for Children  _  Sounds and Actions from A to Z(4)(F).mp3")
     voice.play();
-  }else if(userVal === "g" || userVal === "G"){
+  } else if (userVal === "g" || userVal === "G") {
     containerEl.innerText = ` Girl`
     span.innerText = "🧍‍♀️"
     span.className = "animation-first"
 
     voice = new Audio("mp3/AudioCutter_ABC Phonics Chant for Children  _  Sounds and Actions from A to Z(5)(G).mp3")
     voice.play();
-  }else if(userVal === "h" || userVal === "H"){
+  } else if (userVal === "h" || userVal === "H") {
     containerEl.innerText = ` Hat`
     span.innerText = "👒"
     span.className = "animation-first"
     voice = new Audio("mp3/AudioCutter_ABC Phonics Chant for Children  _  Sounds and Actions from A to Z(6)(H).mp3")
     voice.play();
-  }else if(userVal === "i" || userVal === "I"){
+  } else if (userVal === "i" || userVal === "I") {
     containerEl.innerText = ` igloo`
     span.innerText = "🍙"
     span.className = "animation-first"
     voice = new Audio("mp3/AudioCutter_ABC Phonics Chant for Children  _  Sounds and Actions from A to Z(7)(I).mp3")
     voice.play();
-  }else if(userVal === "j" || userVal === "J"){
+  } else if (userVal === "j" || userVal === "J") {
     containerEl.innerText = ` Juice`
     span.innerText = "🧃"
     span.className = "animation-first"
     voice = new Audio("mp3/AudioCutter_ABC Phonics Chant for Children  _  Sounds and Actions from A to Z(8)(J).mp3")
     voice.play();
-  }else if (userVal === "k" || userVal === "K"){
+  } else if (userVal === "k" || userVal === "K") {
     containerEl.innerText = ` Kangaroo`
     span.innerText = "🦘"
     span.className = "animation-first"
     voice = new Audio("mp3/AudioCutter_ABC Phonics Chant for Children  _  Sounds and Actions from A to Z(9)(K).mp3")
     voice.play();
-  }else if(userVal === "l" || userVal === "L"){
+  } else if (userVal === "l" || userVal === "L") {
     containerEl.innerText = ` Lion`
     span.innerText = "🦁"
     span.className = "animation-first"
     voice = new Audio("mp3/AudioCutter_ABC Phonics Chant for Children  _  Sounds and Actions from A to Z(10)(L).mp3")
     voice.play();
-  }else if(userVal === "m" || userVal === "M"){
+  } else if (userVal === "m" || userVal === "M") {
     containerEl.innerText = `Monkey `
     span.innerText = "🐒"
     span.className = "animation-first"
     voice = new Audio("mp3/AudioCutter_ABC Phonics Chant for Children  _  Sounds and Actions from A to Z(11)(M).mp3")
     voice.play();
-  }else if(userVal === "n" || userVal === "N"){
+  } else if (userVal === "n" || userVal === "N") {
     containerEl.innerText = `Nose`
     span.innerText = "👃"
     span.className = "animation-first"
     voice = new Audio("mp3/AudioCutter_ABC Phonics Chant for Children  _  Sounds and Actions from A to Z(12)(N).mp3")
     voice.play();
-  }else if(userVal === "o" || userVal === "O"){
+  } else if (userVal === "o" || userVal === "O") {
     containerEl.innerText = ` Octupus`
     span.innerText = "🐙"
     span.className = "animation-first"
     voice = new Audio("mp3/AudioCutter_ABC Phonics Chant for Children  _  Sounds and Actions from A to Z(13)(O).mp3")
     voice.play();
-  }else if(userVal === "p" || userVal === "P"){
+  } else if (userVal === "p" || userVal === "P") {
     containerEl.innerText = `Pig`
     span.innerText = "🐖"
     span.className = "animation-first"
     voice = new Audio("mp3/AudioCutter_ABC Phonics Chant for Children  _  Sounds and Actions from A to Z(14)(P).mp3")
     voice.play();
-  }else if(userVal === "q" || userVal === "Q"){
+  } else if (userVal === "q" || userVal === "Q") {
     containerEl.innerText = `Queen`
     span.innerText = "👸"
     span.className = "animation-first"
     voice = new Audio("mp3/AudioCutter_ABC Phonics Chant for Children  _  Sounds and Actions from A to Z(15)(Q).mp3")
     voice.play();
-  }else if(userVal === "r" || userVal === "R"){
+  } else if (userVal === "r" || userVal === "R") {
     containerEl.innerText = ` Rain`
     span.innerText = "🌧️"
     span.className = "animation-first"
     voice = new Audio("mp3/AudioCutter_ABC Phonics Chant for Children  _  Sounds and Actions from A to Z(16)(R).mp3")
     voice.play();
-  }else if(userVal === "s" || userVal === "S"){
+  } else if (userVal === "s" || userVal === "S") {
     containerEl.innerText = ` Sun`
     span.innerText = "🌞"
     span.className = "animation-first"
     voice = new Audio("mp3/AudioCutter_ABC Phonics Chant for Children  _  Sounds and Actions from A to Z(17)(S).mp3")
     voice.play();
-  }else if(userVal === "t" || userVal === "T"){
+  } else if (userVal === "t" || userVal === "T") {
     containerEl.innerText = ` Train`
     span.innerText = "🚂"
     span.className = "animation-first"
     voice = new Audio("mp3/AudioCutter_ABC Phonics Chant for Children  _  Sounds and Actions from A to Z(18)(T).mp3")
     voice.play();
-  }else if(userVal === "u" || userVal === "U"){
+  } else if (userVal === "u" || userVal === "U") {
     containerEl.innerText = `Umberlla`
     span.innerText = "☔"
     span.className = "animation-first"
     voice = new Audio("mp3/AudioCutter_ABC Phonics Chant for Children  _  Sounds and Actions from A to Z(19)(U).mp3")
     voice.play();
-  }else if(userVal === "v" || userVal === "V"){
+  } else if (userVal === "v" || userVal === "V") {
     containerEl.innerText = `van`
     span.innerText = "🚐"
     span.className = "animation-first"
     voice = new Audio("mp3/AudioCutter_ABC Phonics Chant for Children  _  Sounds and Actions from A to Z(20)(V).mp3")
     voice.play();
-  }else if(userVal === "w" || userVal === "W"){
+  } else if (userVal === "w" || userVal === "W") {
     containerEl.innerText = `Watch`
     span.innerText = "⌚"
     span.className = "animation-first"
     voice = new Audio("mp3/AudioCutter_ABC Phonics Chant for Children  _  Sounds and Actions from A to Z(21)(W).mp3")
     voice.play();
-  }else if(userVal === "x" || userVal === "X"){
+  } else if (userVal === "x" || userVal === "X") {
     containerEl.innerText = `Box`
     span.innerText = "📦"
     span.className = "animation-first"
     voice = new Audio("mp3/AudioCutter_ABC Phonics Chant for Children  _  Sounds and Actions from A to Z(22)(X).mp3")
     voice.play();
-  }else if(userVal === "y" || userVal === "Y"){
+  } else if (userVal === "y" || userVal === "Y") {
     containerEl.innerText = `Yoyo`
     span.innerText = "🪀"
     span.className = "animation-first"
     voice = new Audio("mp3/AudioCutter_ABC Phonics Chant for Children  _  Sounds and Actions from A to Z(23)(Y).mp3")
     voice.play();
-  }else if(userVal === "z" || userVal === "Z"){
+  } else if (userVal === "z" || userVal === "Z") {
     containerEl.innerText = `Zoo`
     span.innerText = "🦍🐒🐆"
     span.className = "animation-first"
     voice = new Audio("mp3/AudioCutter_ABC Phonics Chant for Children  _  Sounds and Actions from A to Z(24)(Z).mp3")
     voice.play();
   }
-    
+
 }
 
 
@@ -217,7 +222,11 @@ function pagereload() {
 }
 
 function fastload() {
-  setTimeout(() =>{
+  setTimeout(() => {
     location.reload()
-  },2000)
+  }, 2000)
 }
+
+
+
+//      ownproject Akshai Muraleedharan
